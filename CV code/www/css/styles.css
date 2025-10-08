@@ -1,0 +1,355 @@
+        /* 
+        color : BE1E2F & rgb(3, 1, 20) & rgb(255, 255, 255) & 06050a
+        */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: #010000;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: rgb(255, 255, 255);
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #BE1E2F;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #BE1E2F;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+        
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-image: url(img/img-header.webp) ;
+            background-size: cover;
+            background-position: center center;
+            animation-delay: 0.2s;
+            position: relative;
+            isolation: isolate;
+        }
+
+
+        .hero::after{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: black;
+            opacity: .5;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: rgb(255, 255, 255);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn-contact {
+            margin: 0 40%;
+            background: #BE1E2F;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px #BE1E2F;
+        }
+
+        .btn-contact:hover {
+            background: rgb(3, 1, 20);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgb(3, 1, 20);
+        }
+
+     
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 0 20%;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            position: relative;
+            padding-bottom: 1rem;
+            border-bottom: 3px #BE1E2F solid;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        .experience, .formation {
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 20px rgba(255, 255, 255, 0.15);
+        }
+
+        .experience:hover, .formation:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.283);
+        }
+
+        .experience h3, .formation h3 {
+            color: rgb(255, 255, 255);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .formation h3 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .formation h3 span:first-of-type {
+            color: rgb(255, 255, 255);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .date {
+            color: rgb(255, 255, 255);
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+        }
+
+        .experience p, .formation p {
+            color: rgb(255, 255, 255);
+            margin-bottom: 1rem;
+        }
+
+        .experience ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .experience li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .experience li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 1rem;
+            border: 2px solid ;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        form button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        form button:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 500px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: var(--text);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .experience h3, .formation h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .section_experience { animation-delay: 0.4s; }
+        .section_formation { animation-delay: 0.6s; }
+        .section_contact { animation-delay: 0.8s; }

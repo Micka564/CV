@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Mickaël Oyer">
+    <title>CV de Mickaël Oyer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <div class="logo">MICKAËL OYER</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="hero" id="hero">
+                <h1>Mickaël Oyer<br>Designer UI en devenir</h1>
+                <p>Étudiant en <strong>CDUI RNCP6</strong>, je conçois des interfaces intuitives et accessibles, alliant créativité et fonctionnalité.</p>
+                <button type="button" class="btn-contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contactez-moi</button>
+        </section>
+        <section class="section_experience" id="experiences">
+            <h2>Expériences</h2>
+            <div class="experience">
+                <h3>Service civique à l'EVS de Gaillefontaine<span class="date">2024 - 2025</span></h3>
+                <p>Conception de supports de communication à afficher dans le village ou sur les réseaux</p>
+                <ul>
+                    <li>Création d'affiches pour les événements de l'EVS</li>
+                    <li>Création de posts Facebook</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>Stage à l'Office de Tourisme de Forges-les-Eaux<span class="date">2023</span></h3>
+                <p>Conception de supports de communication</p>
+                <ul>
+                    <li>Création d'affiches pour les événements de l'Office</li>
+                    <li>Création de flyers et d'un livret</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section_formation" id="formations">
+            <h2>Formations & Compétences</h2>
+            <div class="formation">
+                <h3>CDUI RNCP6<span>Conception et Design d'Interfaces Utilisateur</span><span class="date">2025 - 2026</span></h3>
+                <p>Formation intensive en design d'interfaces, ergonomie, accessibilité et outils professionnels (Figma, Adobe XD, Photoshop).</p>
+                <p><strong>Compétences clés :</strong> Wireframing, Prototypage, Branding, Montage vidéo, Design graphique, Motion design, HTML/CSS (bases).</p>
+            </div>
+            <div class="formation">
+                <h3>Infographie RNCP4<span>Conception et Design de supports de communication</span><span class="date">2022 - 2023</span></h3>
+                <p>Formation intensive en conception de supports print et utilisation d'outils professionnels (Illustrator, Photoshop, InDesign).</p>
+                <p><strong>Compétences clés :</strong> Maîtrise des logiciels PAO, Branding.</p>
+            </div>
+        </section>
+
+        <section class="section_contact" id="contact">
+            <h2>Contactez-moi</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem; color: var(--text-light);">Intéressé·e par mon profil ou un projet collaboratif ? N'hésitez pas à me contacter via le formulaire ou mes réseaux.</p>
+            <form onsubmit="event.preventDefault(); alert('Merci pour votre message ! (Formulaire de démonstration)');">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank"><img src="css/img/insta-50.webp" alt="Insta"></a>
+                <a href="#" target="_blank"><img src="css/img/linkedin-50.webp" alt="Linkedin"></a>
+                <a href="#"><img src="css/img/facebook-50.webp" alt="Facebook"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mickaël Oyer - Designer UI en devenir</p>
+    </footer>
+
+    <script>
+        // Animation au scroll du header
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll pour les liens de navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</html>
