@@ -10,13 +10,14 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
             background-color: #010000;
+            margin: 0 200px;
         }
 
         header {
+            margin-left: -200px;
             position: fixed;
             top: 0;
             width: 100%;
@@ -122,7 +123,7 @@
             z-index: -1;
             inset: 0;
             background: black;
-            opacity: .5;
+            opacity: 40%;
         }
 
         .hero h1 {
@@ -189,15 +190,17 @@
             padding: 2rem;
             margin-bottom: 2rem;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 20px rgba(255, 255, 255, 0.15);
+            box-shadow: 0 2px 20px #be1e2e6b;
+            
         }
 
-        .experience:hover, .formation:hover {
+        .experience:hover, .formation:hover  {
             transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.283);
+            box-shadow: 0 8px 30px #be1e2e;
+            background-color: #3030305b;
         }
 
-        .experience h3, .formation h3 {
+        .experience h3, .formation h3  {
             color: rgb(255, 255, 255);
             font-size: 1.4rem;
             margin-bottom: 0.5rem;
@@ -251,6 +254,8 @@
             font-weight: bold;
         }
 
+       
+
         form {
             max-width: 600px;
             margin: 0 auto 2rem;
@@ -279,13 +284,14 @@
         }
 
         form button {
-            background: var(--primary);
+            margin: 0 30%;
+            background: #BE1E2F;
             color: white;
             border: none;
             padding: 1rem 2rem;
             font-size: 1.1rem;
             font-weight: 600;
-            border-radius: 8px;
+            border-radius: 30px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -309,16 +315,16 @@
             border: 2px solid rgb(255, 255, 255);
             border-radius: 500px;
             transition: all 0.3s ease;
+            opacity: .5;
         }
 
         .social-links a:hover {
-            background: var(--primary);
             color: white;
             transform: translateY(-2px);
+            opacity: 100%;
         }
 
         footer {
-            background: var(--text);
             color: white;
             text-align: center;
             padding: 2rem;
