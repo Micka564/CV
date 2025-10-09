@@ -132,6 +132,7 @@
             animation-delay: 0.2s;
             position: relative;
             isolation: isolate;
+            align-items: center;
         }
 
 
@@ -147,7 +148,7 @@
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 1.5rem;
+            padding: 5vh;
             color: rgb(255, 255, 255);
             line-height: 1.2;
         }
@@ -160,7 +161,8 @@
         }
 
         .btn-contact {
-            margin: 0 40%;
+            width: 20vw;
+            margin: 0;
             background: #BE1E2F;
             color: white;
             border: none;
@@ -171,6 +173,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px #BE1E2F;
+            
         }
 
         .btn-contact:hover {
@@ -473,8 +476,17 @@
         .back-to-top img{
            width: 30px;
         }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            padding: 3vh;
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+        }
 
         .btn-contact{
+            width: 50vw;
             margin: 0;
         }
        
