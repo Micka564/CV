@@ -6,6 +6,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
+            
         }
 
         body {
@@ -47,6 +49,9 @@
             font-size: 1.25rem;
             color: rgb(255, 255, 255);
             letter-spacing: 0.5px;
+        }
+        .menu-btn{
+            display: none;
         }
 
         nav ul {
@@ -100,7 +105,20 @@
                 transform: translateY(20px);
             }
         }
-        
+
+        .back-to-top{
+            transform: rotate(-90deg);
+            bottom: 15px;
+            right: 15px;
+            position: fixed;
+        }
+
+
+        .back-to-top:hover{
+            transform: rotate(90deg);
+            transition: all .2s ease-in-out;
+        }
+
 
         .hero {
             height: 100vh;
@@ -359,3 +377,105 @@
         .section_experience { animation-delay: 0.4s; }
         .section_formation { animation-delay: 0.6s; }
         .section_contact { animation-delay: 0.8s; }
+
+
+
+        @media screen and (max-width:480px) {
+            body{
+                margin: 0;
+            }
+
+
+            header{
+                margin-left: 0;
+            }
+
+
+           nav{
+         right: 0;
+         display: block;
+    }
+
+    nav ul{
+            overflow: hidden;
+            clear: both;
+            max-height: 0;
+            transition: max-height .2s ease-out;
+            flex-direction: column;
+        }
+        .logo{
+            margin-top: 50px;
+        }
+
+        .header-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 25px 0;
+            text-align: center;
+        }
+
+        nav .menu-icon {
+            cursor: pointer;
+            display: inline-block;
+            float: none;
+            padding: 25px 20px;
+            position: relative;
+            user-select: none;
+        }
+        nav .menu-icon .navicon {
+            background: rgb(255, 255, 255) ;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+        nav .menu-icon .navicon:before,
+        nav .menu-icon .navicon:after {
+            background: rgb(255, 255, 255);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        nav .menu-icon .navicon:before {
+            top: 5px;
+        }
+        nav .menu-icon .navicon:after {
+            top: -5px;
+        }
+        nav .menu-btn {
+            display: none;
+        }
+        nav .menu-btn:checked ~ ul {
+            max-height: 240px;
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon {
+            background: transparent;
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon:after {
+            transform: rotate(45deg);
+        }
+        nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+        nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+            top: 0;
+        }
+
+        nav a{
+            align-items: center;
+        }
+
+        .back-to-top img{
+           width: 30px;
+        }
+
+        .btn-contact{
+            margin: 0;
+        }
+       
+        }
