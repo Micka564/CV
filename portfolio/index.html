@@ -12,12 +12,12 @@
         <div class="header-content">
             <div class="logo">MICKAËL OYER</div>
             <nav>
-                <ul>
-                    <li><a href="../index.html" href="#hero">Accueil</a></li>
-                    <li><a href="../index.html" href="#experiences">Expériences</a></li>
-                    <li><a href="../index.html" href="#formations">Formations</a></li>
-                    <li><a href="portfolio/portfolio.html" title="portfolio">Portfolio</a></li>
-                    <li><a href="../index.html" href="#contact">Contact</a></li>
+               <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="../index.html#formations">Formations</a></li>
+                    <li><a href="portfolio/index.html" id="link-portfolio" title="portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,16 +40,21 @@
         });
 
         // Smooth scroll pour les liens de navigation
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        
+        // Vérifier si c'est une ancre interne (commence par #)
+        if (href && href.startsWith('#')) {
+            e.preventDefault();
+            const targetSection = document.querySelector(href);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        // Si ce n'est pas une ancre, le lien fonctionnera normalement
+    });
+});
     </script>
 </body>
 </html>
