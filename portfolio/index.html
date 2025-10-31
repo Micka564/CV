@@ -12,7 +12,7 @@
         <div class="header-content">
             <div class="logo">MICKAËL OYER</div>
             <nav>
-               <ul>
+                <ul>
                     <li><a href="../index.html#hero">Accueil</a></li>
                     <li><a href="../index.html#experiences">Expériences</a></li>
                     <li><a href="../index.html#formations">Formations</a></li>
@@ -22,39 +22,51 @@
             </nav>
         </div>
     </header>
-    <main>
 
+    <main>
+        <section class="section_maquettes" id="maquettes">
+            <h2>Maquettes de sites</h2>
+            <div class="maquettes-carré">
+                <div class="maquettes" data-project="atelier-binome">
+                    <h3>Maquettes Atelier Binôme<span class="date">2024 - 2025</span></h3>
+                    <span class="container">
+                        <img src="../img/Maquettes/Atelier binôme/Atelier Binôme ordinateur.webp" alt="maquettes-atelier-binôme">
+                        <img src="../img/Maquettes/Atelier binôme/Atelier Binôme Tablet.webp" alt="maquettes-atelier-binôme">
+                        <img src="../img/Maquettes/Atelier binôme/Atelier Binôme Mobile.webp" alt="maquettes-atelier-binôme">
+                    </span>
+                    <p>Conception de maquettes ordinateur, tablette, smartphone</p>
+                </div>
+                <!-- Vous pouvez ajouter d'autres projets ici -->
+            </div>
+        </section>
     </main>
+
+    <!-- Overlay pour les détails du projet -->
+    <div class="overlay" id="projectOverlay">
+        <div class="overlay-content">
+            <button class="close-btn" id="closeOverlay">×</button>
+            <div class="overlay-header">
+                <img id="overlayImage" src="" alt="">
+                <div class="overlay-title">
+                    <h3 id="overlayTitle"></h3>
+                    <span class="date" id="overlayDate"></span>
+                </div>
+            </div>
+            <div class="overlay-body">
+                <h4>Description du projet</h4>
+                <p id="overlayDescription"></p>
+                
+                <h4>Détails techniques</h4>
+                <div class="project-details" id="projectDetails">
+                    <!-- Les détails seront ajoutés dynamiquement -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2025 Mickaël Oyer - Designer UI en devenir</p>
     </footer>
-        <script>
-        // Animation au scroll du header
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scroll pour les liens de navigation
-  document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        
-        // Vérifier si c'est une ancre interne (commence par #)
-        if (href && href.startsWith('#')) {
-            e.preventDefault();
-            const targetSection = document.querySelector(href);
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-        // Si ce n'est pas une ancre, le lien fonctionnera normalement
-    });
-});
-    </script>
+        <script src="js/script.js"></script>
 </body>
 </html>
