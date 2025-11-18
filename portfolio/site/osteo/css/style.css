@@ -1,0 +1,596 @@
+/*Couleur : #074F76, #51BAB2, #376CB2, #242020*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}*
+
+button{
+    border: none;
+}
+
+button:hover{
+    background-color: #376CB2 ;
+}
+
+header{
+    height: 10vh;
+    background-color: #074f76;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Logo{
+    width: 200px;
+}
+nav{
+    align-content: center;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    border-bottom: solid #51BAB2 1px;
+}
+
+nav ul li a:hover{
+    color: #51BAB2;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.btn-header{
+    color: white;
+    width: 10%;
+    border-radius: 10px;
+    margin-top: 2%;
+    height: 30%;
+    background-color: #51BAB2;
+}
+
+main h2{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+main p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(IMG_osteopathe_2000x1000.webp);
+    background-size: cover;
+    background-position: center center;
+    align-content: center;
+    border-bottom: solid 100px #074f76;
+}
+
+.hero div{
+    margin: 0 20%;
+    color: white;
+    line-height: 30px;
+}
+
+.hero div p {
+    margin: 10px 50% 10px 0;
+}
+
+.btn-hero{
+    color: white;
+    background-color: #51BAB2;
+    border-radius: 10px;
+    height: 30px;
+    width: 10%;
+}
+
+.back-to-top{
+    transform: rotate(-90deg);
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+}
+
+
+.back-to-top:hover{
+     transform: rotate(90deg);
+    transition: all .2s ease-in-out;
+}
+
+.osteopathie h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.articles{
+    margin: 50px 20%;
+    display: flex;
+    text-align: center;
+    gap: 150px;
+    line-height: 25px;
+}
+
+.articles h3{
+    margin: 20px 0;
+    color: #51BAB2;
+}
+
+.btn-lrst{
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+.articles-img{
+    display: flex;
+    justify-content: center;
+}
+
+.articles-img img{
+    width: 100%;
+}
+
+.lesSpécialités{
+    margin: 20px 20%;
+    text-align: center;
+}
+.lesSpécialités p{
+    margin: 20px 20%;
+    line-height: 25px;
+}
+.lesSpécialités div{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    color: #51BAB2;
+    margin: 50px;
+}
+
+.drainage{
+    display: flex;
+}
+
+.drainage section{
+    text-align: center;
+    background-color: #074f76;
+    color: white;
+    align-content: center;
+    line-height: 25px;
+}
+
+.drainage section img{
+    width: 100px;
+}
+
+.drainage h2{
+    margin: 50px 0;
+}
+
+.drainage p{
+    margin: 20px 15%;
+}
+
+.adresse{
+    padding: 150px ;
+    height: 100vh;
+    background-color: #51bab13d;
+}
+
+.adresse-2{
+    margin: 0 20%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.adresse-2 div{
+    align-content: center;
+    text-align: center;
+    line-height: 25px;
+}
+
+.adresse-2 h2{
+    margin-bottom: 20px;
+}
+
+iframe{
+    width:80%; 
+    height: 700px;
+}
+
+.question{
+
+    margin: 50px 20%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.question img{
+    height: 100%;
+    border-radius: 100px;
+}
+
+.question h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+form input{
+    background-color: rgba(128, 128, 128, 0.445);
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#Titre{
+    width: 650px;
+}
+
+.textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 14% 0;
+}
+
+textarea{
+    background-color: rgba(128, 128, 128, 0.445);
+    border: none;
+    border-radius:10px ;
+    height: 200px;
+}
+
+
+.btn-form{
+    margin: 20px 14%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-form button{
+    color: white;
+    border-radius:10px ;
+    width: 20%;
+    height: 30px;
+    background-color: #51bab1ab;
+}
+
+footer{
+    height:100%;
+    background-color: #074f76;
+    color: white;
+    padding: 50px;
+    
+}
+
+.haut-footer{
+    display: flex;
+    justify-content:space-around;
+    padding: 20px 0;
+}
+
+.haut-footer div:first-child{
+    display: flex;
+    justify-content: center;
+}
+
+.haut-footer p{
+    padding: 0 500px 0 0 ;
+}
+
+
+.btn-footer{
+    width: 50%;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color:#51bab1ab; 
+}
+
+footer i{
+    margin-left: 10px;
+}
+footer span{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width:992px) {
+
+    header{
+        height: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .Logo{
+        margin-top: 20px;
+    width: 300px;
+}
+
+    nav ul{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li { 
+        margin: 10px 0;
+    }
+
+    .btn-header{
+    width: 20%;
+    margin: 2% 0;
+    height: 30px;
+    background-color: #51BAB2;
+}
+
+    .btn-hero{
+    border-radius: 10px;
+    height: 30px;
+    width: 20%;
+}
+
+    .hero div{
+        margin: 0 5%;
+        color: white;
+        line-height: 30px;
+}
+
+    .hero div p {
+        margin: 10px 20% 10px 0;
+}
+
+    .articles{
+        margin: 20px 5%;
+        display: block;
+        text-align: center;
+        gap: 20px;
+        line-height: 25px;
+        columns: 2;
+    }
+
+    
+
+    .articles-img img{
+        width: 50%;
+    }
+
+    .drainage{
+        flex-direction: column;
+    }
+
+    .lesSpécialités{
+        margin: 20px 5%;
+    
+}
+
+.adresse-2{
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+iframe{
+    width:100%; 
+    height: 700px;
+}
+
+.question img{
+    display: none;
+}
+.btn-form{
+    margin: 20px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    height: 100%;
+    background-color: #074f76;
+    color: white;
+    padding: 0;
+    
+}
+
+.haut-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 50px 0;
+   justify-content: center;
+}
+    .btn-footer{
+        width: 200px;
+        padding: 20px 30px;
+        margin: 50px 0;;
+    }
+    .haut-footer div:first-child{
+    display: block;
+    
+}
+
+.haut-footer p{
+    padding: 0 ;
+}
+}
+
+@media screen and (max-width:780px){
+
+        header{
+        display: block;
+        text-align: center;
+    }
+    
+           nav{
+         right: 0;
+         display: block;
+    }
+
+    nav ul{
+            overflow: hidden;
+            clear: both;
+            max-height: 0;
+            transition: max-height .2s ease-out;
+            flex-direction: column;
+        }
+        .logo{
+            margin-top: 50px;
+        }
+
+        .header-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 25px 0;
+            text-align: center;
+        }
+
+        nav .menu-icon {
+            cursor: pointer;
+            display: inline-block;
+            float: none;
+            padding: 25px 20px;
+            position: relative;
+            user-select: none;
+        }
+        nav .menu-icon .navicon {
+            background: rgb(255, 255, 255) ;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+        nav .menu-icon .navicon:before,
+        nav .menu-icon .navicon:after {
+            background: rgb(255, 255, 255);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        nav .menu-icon .navicon:before {
+            top: 5px;
+        }
+        nav .menu-icon .navicon:after {
+            top: -5px;
+        }
+        nav .menu-btn {
+            display: none;
+        }
+        nav .menu-btn:checked ~ ul {
+            max-height: 240px;
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon {
+            background: transparent;
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon:after {
+            transform: rotate(45deg);
+        }
+        nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+        nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+            top: 0;
+        }
+
+        .btn-header{
+            width: 30%;
+            height: 50px;
+        }
+
+        .btn-hero{
+            width: 30%;
+            height: 50px;
+        }
+
+        .articles{
+        margin: 20px 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        line-height: 25px;
+        
+    }
+
+    .articles-img{
+    display: flex;
+    flex-direction: column;
+}
+
+    .articles-img img{
+        width: 100%;
+    }
+
+    .lesSpécialités{
+        margin: 20px 5%;
+    }
+
+    .lesSpécialités p{
+    margin: 20px 5%;
+}
+    .lesSpécialités div {
+        display: block;
+    }
+
+    .lesSpécialités img{
+        padding: 20px 0 0 0;
+    }
+
+    .adresse{
+    padding: 20px 5% ;
+    height: 100vh;
+    background-color: #51bab13d;
+}
+
+    form{
+        display: block;
+}
+    form input{
+        margin: 10px 0;
+    }
+    #Titre{
+        width: 100%;
+}
+    .btn-form button{
+        width: 50%;
+        height: 50px;
+    }
+
+}

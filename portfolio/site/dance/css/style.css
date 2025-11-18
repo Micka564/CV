@@ -1,0 +1,424 @@
+/*Code couleur : Rose : #C004D9 ; Violet : #AB05F2 ; Violet foncé : #6D0FF2 ; Noir #0D0D0D*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #6d0ff2;
+    display: flex;
+    justify-content: space-around;
+}
+.div-ln{
+    display: flex;
+}
+.logo img{
+    width: 180px;
+}
+nav{
+    align-content: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+    
+}
+
+nav ul li{
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover{
+    border-bottom: solid 1px #c004d9;
+    transform: translate(y);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #c004d9;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-btn{
+    display: none;
+}
+.icons{
+    align-content: center;
+}
+
+ .back-to-top{
+    transform: rotate(-90deg);
+    bottom: 15%;
+    right: 15px;
+    position: fixed;
+    
+}
+
+
+.back-to-top:hover{
+    transform: rotate(90deg);
+    transition: all .2s ease-in-out;
+}
+
+.hero{
+    background-image: url(audience-868074_1920.webp);
+    background-size: cover;
+    background-position: center center;
+    position: stati;
+}
+
+.Présentation{
+    margin:50px 15% ;
+}
+
+h1{
+    text-align: center;
+}
+
+.Présentation p{
+    margin-top: 30px;
+}
+
+main section h2 {
+    text-align: center;
+}
+
+.articles{
+    margin: 50px 15%;
+}
+
+.articles div{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.articles img{
+    width: 100%;
+    height: 250px;
+}
+
+.articles h3{
+    font-weight: lighter;
+    margin: 0 0 15px 0;
+}
+
+.articles strong{
+    font-weight: bold;
+}
+
+.articles_2-back{
+    background-color: #6d0ff2;
+    height: 450px;
+    padding-top: 1px;
+}
+
+.articles_2{
+    margin:50px 15% ;
+    color: white;
+    align-content: center;
+    
+}
+
+
+.articles_2 div{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.articles_2 h3{
+    margin: 15px 0;
+    border-bottom: solid 1px white;
+}
+
+.Tarif{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    width: 30%;
+    height: 35px;
+}
+
+.btn:hover{
+    background-color: #c004d9;
+}
+
+.contact{
+    margin: 50px 15%;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact_2{
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+iframe{
+     width:100%; 
+     height:450px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+form input{
+    display: flex;
+    flex-direction: column;
+    width:670px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color:#c004d986;
+}
+
+form textarea{
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color:#c004d986  ;
+}
+
+.btnform{
+    text-align: end;
+}
+
+.btnform button{
+    width: 30%;
+    height: 35px;
+    background-color: #6d0ff2;
+    color: white;
+}
+
+.btnform button:hover{
+    background-color: #c004d9;
+}
+
+footer{
+    height: 150px;
+    background-color: #0D0D0D;
+}
+
+.footer-back{
+    margin: 50px 15% 0;
+    color: white;
+}
+
+.sec{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.Mentions{
+  display: flex;  
+  justify-content: center;
+    
+}
+
+@media screen and (max-width:992px){
+    .Présentation{
+    margin:50px 5% ;
+}
+    .articles{
+    margin: 50px 5%;
+}
+    .articles_2{
+    margin:50px 5% ;
+    
+}
+    .contact{
+    margin: 50px 5%;
+}
+    .contact_2{
+        display: block;
+        gap: none;
+        margin: 0 10%;
+    }
+
+    .btnform{
+    text-align: center;
+}
+
+    footer{
+        height: 170px;
+}
+
+    .footer-back{
+        margin: 50px  5% 0;
+}
+}
+
+@media screen and (max-width:780px) {
+ header{
+    background-color: #6d0ff2;
+    display: block;
+    text-align: center;
+}
+.div-ln{
+    display: block;
+    text-align: center;
+}
+
+               nav{
+         right: 0;
+         display: block;
+    }
+
+    nav ul{
+            overflow: hidden;
+            clear: both;
+            max-height: 0;
+            transition: max-height .2s ease-out;
+            flex-direction: column;
+        }
+        .logo{
+            margin-top: 50px;
+        }
+
+        .header-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 25px 0;
+            text-align: center;
+        }
+
+        nav .menu-icon {
+            cursor: pointer;
+            display: inline-block;
+            float: none;
+            padding: 25px 20px;
+            position: relative;
+            user-select: none;
+        }
+        nav .menu-icon .navicon {
+            background: rgb(255, 255, 255) ;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+        nav .menu-icon .navicon:before,
+        nav .menu-icon .navicon:after {
+            background: rgb(255, 255, 255);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        nav .menu-icon .navicon:before {
+            top: 5px;
+        }
+        nav .menu-icon .navicon:after {
+            top: -5px;
+        }
+        nav .menu-btn {
+            display: none;
+        }
+        nav .menu-btn:checked ~ ul {
+            max-height: 240px;
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon {
+            background: transparent;
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+        nav .menu-btn:checked ~ .menu-icon .navicon:after {
+            transform: rotate(45deg);
+        }
+        nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+        nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+            top: 0;
+        }
+
+        .icons{
+            display: none;
+        }
+
+        .back-to-top{
+            display: none;
+        }
+
+       .articles div{
+            margin-top: 20px;
+            display: block;
+} 
+    .articles_2-back{
+        background-color: #6d0ff2;
+        height: 100%;
+        padding-top: 1px;
+}
+
+    .articles_2 div{
+        display: block;
+        margin-top: 20px;
+        gap: 20px;
+}
+    .articles_2 img{
+        margin-top: 20px;
+    }
+    .Tarif{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+       .contact{
+    margin: 50px 5%;
+}
+    .contact_2{
+        display: block;
+        gap: none;
+        margin: 0;
+    } 
+    form input{
+    width:100%;
+    height: 30px;
+}
+
+form textarea{
+
+    width: 100%;
+    height: 150px;
+
+}
+    footer{
+        height: 100%;
+        background-color: #0D0D0D;
+}
+
+    .sec{
+        display: block;
+    }
+    footer section{
+    margin-bottom: 20px;
+}
+
+}
