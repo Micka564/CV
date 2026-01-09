@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const slide = ["site eval.webp", "site eval 2.webp", "site eval 3.webp"];
+    const slide = ["site eval.webp", "site eval 2.webp", "site eval 3.webp", "v2.webp","vidéo de noël.webp"];
     document.getElementById('precedent').addEventListener('click', () => ChangeSlide(-1));
     document.getElementById('suivant').addEventListener('click', () => ChangeSlide(1));
 
@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const slideTexts = [
         'Ce site one page a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
         'Ce site one page a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
-        'Ce site one page a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS. '
+        'Ce site one page a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
+        'Ce projet est un GIF fait pour l\'EVS Partages en Bray afin de souhaiter Joyeux Noël par e-mail aux habitués de l\'EVS.',
+        'Ce projet a été fait pour l\'EVS Partages en Bray afin de se remémorer en image le goûter de Noël 2025.'
     ];
 
     /**
@@ -18,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const slideLinks = [
         'portfolio/site/dance/index.html',
         'portfolio/site/osteo/index.html',
-        'portfolio/site/Tripe/index.html'
+        'portfolio/site/Tripe/index.html',
+        'portfolio/evs/gif/v2.gif',
+        'portfolio/evs/vid/vidnoël.mp4'
     ];
     let numero = 0;
 
@@ -48,6 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         slideLinkElement.href = slideLinks[numero];
     }
 
-    setInterval(() => ChangeSlide(1), 4.5 * 1000);
+    setInterval(() => ChangeSlide(1), 10 * 1000);
 });
 

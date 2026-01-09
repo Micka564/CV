@@ -183,23 +183,25 @@
         }
 
 
-        #slider {
+        .slider {
             position: relative;
             width: 1500px;
             margin: auto;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
         }
 
         #precedent, #suivant {
             position: absolute;
             font-size: 100px;
             cursor: pointer;
+            color: #BE1E2F;
         }
 
         #precedent:hover, #suivant:hover{
-            color: rgb(94, 94, 94);
+            color: #be1e2e95;
             transition: all 200ms ease-in-out;
         }
         #precedent {
@@ -210,15 +212,20 @@
             right: 0;
         }
 
-        #infos{
+        .infos{
             padding: 1%;
             position: absolute;
             width: 600px;
             margin: auto;
-            background-color: rgba(255, 255, 255, 0.267);
+            background-color: rgba(255, 255, 255, 0.4);
         }
 
-        #infos a{
+        .infos p{
+            margin-bottom: 10px;
+        }
+
+
+        .infos a{
             color: white;
             text-decoration: none;
             border-radius: 50px;
@@ -228,7 +235,7 @@
             box-shadow: 0 2px 5px #BE1E2F;
         }
 
-        #infos a:hover{
+        .infos a:hover{
             background: rgb(3, 1, 20);
             transform: translateY(-2px);
             box-shadow: 0 3px 15px rgb(3, 1, 20);
