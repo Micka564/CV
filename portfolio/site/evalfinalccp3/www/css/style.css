@@ -1,0 +1,598 @@
+/*Code couleur
+#B39A69 #FFEDC9 #FFE5B0 #577CB3 #B0CFFF*/
+
+@font-face {
+  font-family: "Zonapro-bold";
+  src:
+    local("zonapro-bold"),
+    url("../Font/zonapro-bold.otf") format("opentype") tech(color-COLRv1),
+}
+
+@font-face {
+  font-family: "Zonapro-thin";
+  src:
+    local("zonapro-thin"),
+    url("../Font/zonapro-thin.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "Orbitron-black";
+  src:
+    local("orbitron-black"),
+    url("../Font/Orbitron/orbitron-black.otf") format("opentype") tech(color-COLRv1),
+    url("../Font/Orbitron/orbitron-bold.otf") format("opentype"),
+    url("../Font/Orbitron/orbitron-light.otf") format("opentype"),
+    
+}
+
+@font-face {
+  font-family: "Orbitron-bold";
+  src:
+    local("orbitron-bold"),
+    url("../Font/Orbitron/orbitron-bold.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "Orbitron-light";
+  src:
+    local("orbitron-light"),
+    url("../Font/Orbitron/orbitron-light.otf") format("opentype"),
+}
+
+@font-face {
+    font-family:"orbitron-medium" ;
+    src:
+    local("orbitron-medium")
+    url("../Font/Orbitron/orbitron-medium.otf") format("opentype"),
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a:hover{
+    color: #B0cfff;
+}
+
+li:hover{
+    border-bottom: solid 1px #B0cfff;
+}
+
+header{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#577cb3 ;
+}
+
+header img{
+    width: 180px;
+}
+nav{
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Zonapro-thin";
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+.hero img{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: -5px;
+}
+
+.hero h1{
+    padding: 20px 10%;
+    color: white;
+    background-color: #577cb3;
+    font-family: "Zonapro-thin";
+}
+
+ .back-to-top{
+    transform: rotate(-90deg);
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+}
+
+
+.back-to-top:hover{
+     transform: rotate(90deg);
+    transition: all .2s ease-in-out;
+}
+
+strong{
+    color:#FFE5B0 ;
+}
+
+.Presentation, .Prestation, .équipe{
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.Presentation h2{
+    padding:0 0 20px 0;
+    color: #577cb3;
+    font-family: "zonapro-bold" ;
+    font-size: 28px;
+}
+.Presentation p{
+    line-height: 25px;
+    font-family: sans-serif ;
+    font-size: 18px;
+}
+.Prestation h2{
+    padding:0 0 20px 0;
+    color: #577cb3;
+    font-family: "zonapro-bold" ;
+    font-size: 28px;
+}
+
+.Prestation p{
+    line-height: 25px;
+    font-family: sans-serif ;
+    font-size: 18px;
+}
+
+.équipe h2{
+    color: #577cb3;
+    font-family: "zonapro-bold" ;
+    font-size: 28px;
+}
+
+.équipe div{
+    padding:50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.équipe img{
+    width: 200px;
+}
+
+.équipe h3{
+    padding: 10px 0;
+    color: #577cb3;
+    font-family:"Zonapro-thin" ;
+    font-size: 24px;
+}
+
+.équipe span{
+    color:#B0cfff ;
+}
+
+.projet{
+    display: flex;
+}
+
+.projet-img{
+    width: 1000px;
+}
+
+.projet-img img{
+    width: 1000px;
+    height: 500px;
+}
+
+.projet-txt{
+    padding: 0 10% 0 20px ;
+}
+
+.projet-txt h2{
+    color: #577cb3;
+    font-family: "Zonapro-bold";
+    font-size: 28px;
+}
+
+.projet-txt p{
+    padding-top: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.Newsletter{
+    display: flex;
+    justify-content: space-between;
+    background-color: #577cb3;
+    padding: 20px 10%;
+}
+
+.Newsletter h2{
+    align-content: center;
+    color: white;
+    font-family: "Zonapro-thin";
+    font-size: 36px;
+}
+
+.btn-news{
+    border: none;
+    border-radius: 10px;
+    color: #FFE5B0;
+    background-color: #B0cfff;
+    padding: 20px 50px;
+    font-size: 36px;
+}
+
+.btn-news:hover{
+    background-color:#b39a69 ;
+}
+
+.Contact{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.Contact-first{
+    padding: 5% 10%;
+}
+
+.Contact h2{
+    padding-bottom: 50px;
+    color: #577cb3;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Zonapro-bold";
+}
+
+.Contact label{
+    color: #577cb3;
+    font-family:"Zonapro-bold" ;
+    font-size: 24px;
+}
+
+.Contact input,textarea{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: #B0cfff;
+    border-radius: 10px;
+    border: none;
+}
+
+.Contact input{
+    height: 30px;
+}
+
+.Contact textarea{
+    height: 50px;
+}
+
+iframe{
+    padding:100px 0 0 0;
+    width:100%; 
+    height:600px;
+}
+
+.btn-form{
+    padding-top: 20px;
+    text-align: end;
+}
+
+.btn-form button{
+    padding: 10px;
+    font-family: "Zonapro-bold";
+    font-size: 36px;
+    color: #FFE5B0;
+    background-color: #577cb3;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-form button:hover{
+    background-color: #b39a69;
+}
+
+footer{
+    padding:20px 10% ;
+    display: flex;
+    flex-direction: column;
+    background-color: #577cb3;
+    font-family: sans-serif;
+}
+
+.footer-first{
+    padding-bottom:50px  ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-first div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Mention{
+    text-align: end;
+}
+
+.footer-first section{
+    text-align: center;
+}
+
+.footer-first a{
+    text-decoration: none;
+    color: white;
+}
+
+footer span p{
+    padding-right: 100px;
+    margin-bottom: -10px;
+    text-align: center;
+    color: white;
+}
+
+.icons{
+    text-align: end;
+}
+
+@media screen and (max-width:992px) {
+
+    header{
+        padding: 0 5%;
+    }
+
+    .dis-co{
+        display: flex;
+    }
+    .Presentation, .Prestation, .équipe{
+    text-align: center;
+    padding: 5%;
+}
+    .Presentation h2{
+        font-size: 20px;
+    }
+    .Presentation p{
+        font-size: 14px;
+    }
+    .Prestation h2{
+        font-size: 20px;
+    }
+
+    .Prestation p{
+        font-size: 14px;
+    }
+
+    .équipe h2{
+        font-size: 22px;
+    }
+    .équipe img{
+        width: 100px;
+    }
+
+    .équipe h3{
+    font-size: 18px;
+    }
+
+    .projet-img img{
+        width: 500px;
+        height: 300px;
+    }
+
+    .projet-txt{
+    padding: 0 5% 0 20px ;
+    }
+
+    .projet-txt h2{
+    font-size: 22px;
+    }
+
+    .projet-txt p{
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .Newsletter{
+        padding: 20px 5%;
+    }
+
+    .Newsletter h2{
+        font-size: 26px;
+    }
+
+    .btn-news{
+        padding: 10px 30px;
+        font-size: 26px;
+    }
+    .Contact{
+        display: block;
+    }
+
+    .Contact h2{
+        padding-bottom: 50px;
+        color: #577cb3;
+        text-align: center;
+        font-size: 22px;
+        font-family: "Zonapro-bold";
+    }
+
+    .Contact label{
+        color: #577cb3;
+        font-family:"Zonapro-bold" ;
+        font-size: 18px;
+    }
+    iframe{
+        padding-bottom: 50px;
+    }
+    .btn-form{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .btn-form button{
+        padding: 20px;
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width:780px){
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    nav{
+        right: 0;
+        display: block;
+    }
+
+    nav ul{
+        overflow: hidden;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        flex-direction: column;
+    }
+    .logo{
+        margin-top: 50px;
+    }
+
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 25px 0;
+        text-align: center;
+    }
+
+    nav .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: none;
+        padding: 25px 20px;
+        position: relative;
+        user-select: none;
+    }
+    nav .menu-icon .navicon {
+        background: rgb(255, 255, 255) ;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+    nav .menu-icon .navicon:before,
+    nav .menu-icon .navicon:after {
+        background: rgb(255, 255, 255);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    nav .menu-icon .navicon:before {
+        top: 5px;
+    }
+    nav .menu-icon .navicon:after {
+        top: -5px;
+    }
+    nav .menu-btn {
+        display: none;
+    }
+    nav .menu-btn:checked ~ ul {
+        max-height: 240px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+    nav .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+    nav .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+    nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    .hero img{
+    width: auto;
+    height: 50vh;
+    margin-bottom: -5px;
+}
+    .dis-co{
+        display: block;
+    }
+    .hero h1{
+        padding: 3%;
+    }
+    .Presentation, .Prestation, .équipe{
+        padding: 3%;
+    }
+    .projet{
+        display: block;
+    }
+    .projet-img{
+        width: 100%;
+        height:0 auto;
+    }
+    .projet-img img{
+        width: 100%;
+    }
+
+    .équipe div{
+        padding:50px 0;
+        display: block;
+        justify-content: space-around;
+    }
+    .équipe img{
+        width: 150px;
+    }
+    .Newsletter{
+        margin-top: 2%;
+        display: block;
+        padding: 3%;
+    }
+    .Contact input,textarea{
+        width: 100%;
+    }
+
+    .footer-first{
+        padding-bottom:20px  ;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+    .footer-first div{
+        padding-bottom: 20px;
+    }
+
+    .footer-first section{
+        padding-bottom: 20px;
+    }
+    .Mention{
+        text-align: center;
+    }
+    footer span p{
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .icons{
+        text-align: center;
+    }
+}

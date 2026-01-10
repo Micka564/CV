@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const slide = ["site eval.webp", "site eval 2.webp", "site eval 3.webp", "v2.webp","vidéo de noël.webp","sitecrimsontrail.webp"];
+    const slide = ["site eval.webp", "site eval 2.webp", "site eval 3.webp","finalevalccp3.webp","v2.webp","vidéo de noël.webp","sitecrimsontrail.webp"];
     document.getElementById('precedent').addEventListener('click', () => ChangeSlide(-1));
     document.getElementById('suivant').addEventListener('click', () => ChangeSlide(1));
 
@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
      * Texte de mes slides à afficher
      */
     const slideTexts = [
-        'Ce site one page a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
-        'Ce site one page a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
-        'Ce site one page a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
+        'le site one page sur Dancing contest est un faux site qui a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
+        'Ce site one page sur un faux Cabinet Beaubourg a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
+        'Le site MYTRIPE est un site one page qui a été réaliser dans le cadre d\'une évaluation blanche sur une période de 7h en full HTML & CSS.',
+        'Le site Archidesign a été réalisé dans le cadre de l\'évaluation finale du CCP3 de la formation CDUI RNCP6. C\'est un site one page en HTML et CSS',
         'Ce projet est un GIF fait pour l\'EVS Partages en Bray afin de souhaiter Joyeux Noël par e-mail aux habitués de l\'EVS.',
         'Ce projet a été fait pour l\'EVS Partages en Bray afin de se remémorer en image le goûter de Noël 2025.',
         'Crimsontrail est un projet fictif dans le but d\'être présenté à l\'examen final de la formation CDUI RNCP 6.'
@@ -22,9 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'portfolio/site/dance/index.html',
         'portfolio/site/osteo/index.html',
         'portfolio/site/Tripe/index.html',
+        'portfolio/site/evalfinalccp3/www/index.html',
         'portfolio/evs/gif/v2.gif',
         'portfolio/evs/vid/vidnoël.mp4',
-        'https://crimsontrail.fr/'
+        'https://crimsontrail.fr/',
     ];
     let numero = 0;
 
