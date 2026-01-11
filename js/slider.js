@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const slide = ["site eval.webp", "site eval 2.webp", "site eval 3.webp","finalevalccp3.webp","v2.webp","vidéo de noël.webp","sitecrimsontrail.webp"];
+    const slide = ["site eval.webp", "site eval 2.webp", "site eval 3.webp","finalevalccp3.webp","v2.webp","vidéo de noël.webp","sitecrimsontrail.webp","logosocks.svg"];
     document.getElementById('precedent').addEventListener('click', () => ChangeSlide(-1));
     document.getElementById('suivant').addEventListener('click', () => ChangeSlide(1));
 
@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Le site Archidesign a été réalisé dans le cadre de l\'évaluation finale du CCP3 de la formation CDUI RNCP6. C\'est un site one page en HTML et CSS',
         'Ce projet est un GIF fait pour l\'EVS Partages en Bray afin de souhaiter Joyeux Noël par e-mail aux habitués de l\'EVS.',
         'Ce projet a été fait pour l\'EVS Partages en Bray afin de se remémorer en image le goûter de Noël 2025.',
-        'Crimsontrail est un projet fictif dans le but d\'être présenté à l\'examen final de la formation CDUI RNCP 6.'
+        'Crimsontrail est un projet fictif dans le but d\'être présenté à l\'examen final de la formation CDUI RNCP 6.',
+        'Ce logo du nom de Socksettes a été réaliser dans le cadre de ma formation CDUI RNCP6 pour une écaluation blanche du CCP1'
     ];
 
     /**
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'portfolio/evs/gif/v2.gif',
         'portfolio/evs/vid/vidnoël.mp4',
         'https://crimsontrail.fr/',
+        'portfolio/logo/Socksettes/Logo/SVG/logosocks-noir.svg',
     ];
     let numero = 0;
 

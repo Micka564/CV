@@ -15,7 +15,7 @@
             line-height: 1.6;
             overflow-x: hidden;
             background-color: #010000;
-            margin: 0 200px;
+            
         }
 
         header {
@@ -133,6 +133,7 @@
             position: relative;
             isolation: isolate;
             align-items: center;
+            background-repeat: no-repeat;
         }
 
 
@@ -185,11 +186,20 @@
 
         .slider {
             position: relative;
-            width: 1500px;
+            width: 60%;
             margin: auto;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .span-slide{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider img{
+            width: 100%;
         }
 
         #precedent, #suivant {
@@ -214,9 +224,9 @@
         .infos{
             padding: 1%;
             position: absolute;
-            width: 600px;
+            width:  50%;
             margin: auto;
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 255, 0.564);
         }
 
         .infos p{
@@ -407,13 +417,13 @@
             padding: 2rem;
         }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
+        @media (max-width: 1024px) {
+            header{
+                margin: 0;
             }
-
-            .hero p {
-                font-size: 1.1rem;
+            .header-content {
+            display: flex;
+            flex-direction: column;
             }
 
             nav ul {
@@ -424,9 +434,26 @@
                 font-size: 0.9rem;
             }
 
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
             h2 {
                 font-size: 2rem;
             }
+            .slider {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
 
             .experience h3, .formation h3 {
                 font-size: 1.2rem;
@@ -446,16 +473,24 @@
 
 
             header{
-                margin-left: 0;
+                position: sticky;
+            }
+                
+                
+            .header-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            text-align: center;
             }
 
 
            nav{
          right: 0;
          display: block;
-    }
+        }
 
-    nav ul{
+        nav ul{
             overflow: hidden;
             clear: both;
             max-height: 0;
@@ -466,12 +501,7 @@
             margin-top: 50px;
         }
 
-        .header-content{
-            display: flex;
-            flex-direction: column;
-            padding: 0 0 25px 0;
-            text-align: center;
-        }
+
 
         nav .menu-icon {
             cursor: pointer;
@@ -532,18 +562,44 @@
         .back-to-top img{
            width: 30px;
         }
+
+            .hero {
+            background-size: 170%;
+        }
         
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             font-weight: 800;
             padding: 3vh;
             color: rgb(255, 255, 255);
             line-height: 1.2;
         }
 
+        .hero p {
+            font-size: 1.0rem;
+            margin: 0;
+            max-width: 70%;
+        }
+
         .btn-contact{
+            font-size: 0.9rem;
             width: 50vw;
             margin: 0;
         }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
+            .slider img {
+                overflow: hidden;
+                width: auto;
+                height: 50vh;
+            }
        
         }
